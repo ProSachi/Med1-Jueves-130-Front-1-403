@@ -1,0 +1,240 @@
+/* Variables CSS para Modo Claro (por defecto) */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #1fdbe2;
+    --text-primary: #000000;
+    --text-secondary: #666666;
+    --border-color: #cccccc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --accent-color: #007bff;
+    --hover-bg: #e9ecef;
+}
+
+/* Modo oscuro manual (agrega la clase .dark-mode al body o html) */
+.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #f5f5f5;
+    --text-secondary: #c7c7c7;
+    --border-color: #3a3a3a;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+    --accent-color: #4ea1ff;
+    --hover-bg: #2a2a2a;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-secondary);
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Párrafos */
+p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Enlaces */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Botones */
+button,
+.btn {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--accent-color);
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+
+button:active,
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Inputs y formularios */
+input,
+textarea,
+select {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--shadow-color);
+}
+
+/* Cards/Panel */
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.card:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Navegación */
+nav {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--hover-bg);
+    text-decoration: none;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Listas */
+ul,
+ol {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+/* Utilidades */
+.text-muted {
+    color: var(--text-secondary);
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.border {
+    border: 1px solid var(--border-color);
+}
+
+.sectionContainer{
+    background-color: brown;
+}

@@ -1,0 +1,24 @@
+.alerta {
+    color: black;
+    background-color: aqua;
+
+}
+
+.alerta-roja {
+    color: white;
+    background-color: red;
+}
+
+.alerta-verde {
+    color: white;
+    background-color: green;
+}
+
+.tarjeta {
+    background-color: blue;
+}
+
+.oculto {
+    display: none;
+    background-color: blueviolet;
+}

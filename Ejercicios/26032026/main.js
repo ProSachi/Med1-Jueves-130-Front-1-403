@@ -40,6 +40,13 @@ const catalogoHTML = librosStock.map(({ titulo, precio }) => {
 }); */
 
 /* 
+
+const baseDeDatos = [
+    { id: 1, titulo: "JavaScript Ninja", precio: 40, stock: true }, // 0
+    { id: 2, titulo: "React Avanzado", precio: 60, stock: false }, // 1
+    { id: 3, titulo: "CSS Master", precio: 30, stock: true } // 2
+];
+
 const librosStock = baseDeDatos
     .filter(disponible => disponible.stock === true)
     .map(({ titulo, precio }) => {
@@ -81,7 +88,7 @@ const recomendacion = peliculasAPI
     return `La recomendación es la pelicula ${titulo} del genero ${genero}`
 });
 
-console.log(recomendacion);
+console.log(catalogo);
 
 
 
